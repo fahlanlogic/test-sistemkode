@@ -2,19 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Cartridge Kings: Your one-stop shop for high-quality printer cartridges and accessories. Explore our wide range of products and enjoy exceptional customer service." />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>React App</title>
+    <title>Cartridge Kings</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Nav Bar -->
+      <header>
+        <nav class="nav-bar">
+          <div class="left-nav">
+            <a href="#">Franchise Oppurtunities</a>
+            <a href="#">Help</a>
+            <a href="#">Feedback</a>
+          </div>
+          <div class="right-nav">
+            <a href="#">hello@email.com</a>
+            <a href="#">0800 022 2 022</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Title -->
+      <div class="container title-section">
+        <div class="logo">
+          <img
+            src="public/logo-icon.svg"
+            alt="Logo Cartridge Kings"
+            class="logo" />
+          <p class="text-logo">Cartridge Kings</p>
+        </div>
+        <div class="search-bar">
+          <form class="input">
+            <input
+              type="text"
+              placeholder="SEARCH" />
+            <button type="submit"></button>
+              <img
+                src="public/search-icon.svg"
+                alt=""
+                class="search-icon" />
+            </button>
+          </form>
+          <a href="#">CART (1)</a>
+        </div>
+      </div>
+
+      <!-- Nav Bar 2 -->
+      <div class="container nav-bar-2">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Ink Cartridges</a>
+          <a href="#">Toner Cartridges</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Login / Register</a>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-content container">
+          <h1>Find The Right Cartridges For Your Printer</h1>
+          <div class="menu">
+            <div class="head-menu">
+              <a href="#">3-Steps Easy Search&reg;</a>
+              <a href="#">Search by Serial Number</a>
+            </div>
+            <form class="content-menu">
+              <!-- <label for="printer-brand">1. Printer Brand</label> -->
+              <select name="printer-brand" id="printer-brand">
+                <option value="">1. Printer Brand</option>
+                <option value="Epson">Epson</option>
+                <option value="Canon">Canon</option>
+                <option value="HP">HP</option>
+              </select>
+              <select name="printer-brand" id="printer-brand">
+                <option value="">2. Printer Series</option>
+                <option value="Epson">Epson</option>
+                <option value="Canon">Canon</option>
+                <option value="HP">HP</option>
+              </select>
+              <select name="printer-brand" id="printer-brand">
+                <option value="">3. Printer Model</option>
+                <option value="Epson">Epson</option>
+                <option value="Canon">Canon</option>
+                <option value="HP">HP</option>
+              </select>
+              <button>Find Cartridges</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Products -->
+      <main>
+        <h2>Featured Products</h2>
+        <div class="card-container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper" id="swiper-wrapper">
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
